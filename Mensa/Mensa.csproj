@@ -52,8 +52,9 @@
 	<ItemGroup>
 		<None Remove="Italbytz.Adapters.Meal.Mock" />
 	</ItemGroup>
+	
 	<ItemGroup>
-		<PackageReference Include="Italbytz.Adapters.Meal.Mock" Version="0.2.0" />
+	  <PackageReference Include="Italbytz.Adapters.Meal.OpenMensa" Version="0.1.0" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiXaml Update="AppShell.xaml">

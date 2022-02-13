@@ -1,5 +1,5 @@
 ﻿using System.Diagnostics;
-using Italbytz.Adapters.Meal.Mock;
+using Italbytz.Adapters.Meal.OpenMensa;
 using Italbytz.Ports.Common;
 using Italbytz.Ports.Meal;
 
@@ -7,7 +7,7 @@ namespace Mensa;
 
 public partial class MainPage : ContentPage
 {
-    private IService<IMealQuery, List<IMealCollection>> _service = new MockGetMealsService();
+    private IService<IMealQuery, List<IMealCollection>> _service = new OpenMensaGetMealsService();
     private readonly MensaViewModel viewModel = new();
 
     public MainPage()
