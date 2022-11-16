@@ -22,7 +22,7 @@ public partial class MainPage : ContentPage
         try
         {
             await SuccessHandlerAsync(await _service.Execute(
-                new MealQuery() { Mensa = 42, Date = DateTime.Now }));
+                new MealQuery() { Mensa = 55, Date = DateTime.Now }));
         }
         catch (Exception ex)
         {
